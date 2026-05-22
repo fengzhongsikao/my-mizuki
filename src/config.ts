@@ -365,7 +365,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "邮箱",
 			icon: "material-symbols:attach-email",
-			url: "mailto:boltjolt@qq.com",
+			url: "mailto:fivefree@qq.com",
 		},
 		{
 			name: "GitHub",

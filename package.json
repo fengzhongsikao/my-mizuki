@@ -4,6 +4,7 @@
 	"version": "9.0",
 	"scripts": {
 		"sync-content": "bun scripts/sync-content.js",
+		"postinstall": "bun scripts/postinstall.js",
 		"init-content": "bun scripts/init-content-repo.js",
 		"predev": "bun scripts/sync-content.js || true",
 		"prebuild": "bun scripts/sync-content.js || true",

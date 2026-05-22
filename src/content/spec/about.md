@@ -35,7 +35,7 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 
 # 🔗 友链
 
-欢迎交换友链！交换友链请邮箱联系我。详情请移步 [友链页面](/friends/) 查看。
+欢迎交换友链！交换友链请邮箱(fivefree@qq.com)联系我。详情请移步 [友链页面](/friends/) 查看。
 ```json
 { 
     title: "博客名称",
