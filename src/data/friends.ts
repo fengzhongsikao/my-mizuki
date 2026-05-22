@@ -51,6 +51,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://www.20210701.xyz/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 6,
+		title: "atticus",
+		imgurl: "https://www.atticus0723.top/avatar.png",
+		desc: "探索空间数据与现代前端的交汇",
+		siteurl: "www.atticus0723.top",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
