@@ -114,7 +114,7 @@ jobs:
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: context.issue.issue_number,
+                issue_number: context.issue.number,
                 body: comment
               });
               return;
@@ -152,7 +152,7 @@ jobs:
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: context.issue.issue_number,
+                issue_number: context.issue.number,
                 labels: ['friend-link', 'invalid']
               });
             } else {
@@ -162,7 +162,7 @@ jobs:
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.issue_number,
+              issue_number: context.issue.number,
               body: comment
             });
 
@@ -236,13 +236,13 @@ jobs:
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.issue_number,
+              issue_number: context.issue.number,
               body: comment
             });
 
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.issue_number,
+              issue_number: context.issue.number,
               labels: ['pr-created']
             });
