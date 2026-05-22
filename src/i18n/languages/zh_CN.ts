@@ -35,6 +35,7 @@ export const zh_CN: Translation = {
 	[Key.friendsCopyLink]: "复制链接",
 	[Key.friendsCopySuccess]: "已复制",
 	[Key.friendsTags]: "标签",
+	[Key.friendsApply]: "申请友链",
 	[Key.untitled]: "无标题",
 	[Key.uncategorized]: "未分类",
 	[Key.noTags]: "无标签",

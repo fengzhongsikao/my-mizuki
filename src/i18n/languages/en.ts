@@ -35,6 +35,7 @@ export const en: Translation = {
 	[Key.friendsCopyLink]: "Copy Link",
 	[Key.friendsCopySuccess]: "Copied",
 	[Key.friendsTags]: "Tags",
+	[Key.friendsApply]: "Apply for Friend Link",
 	[Key.untitled]: "Untitled",
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",

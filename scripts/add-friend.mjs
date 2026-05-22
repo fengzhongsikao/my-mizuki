@@ -1,9 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const FRIENDS_DATA_PATH = path.join(__dirname, "../src/data/friends.ts");
+const FRIENDS_DATA_PATH = path.join(import.meta.dir, "../src/data/friends.ts");
 
 function parseArgs() {
 	const args = process.argv.slice(2);
@@ -37,7 +35,7 @@ async function main() {
 
 	if (!title || !siteurl || !imgurl || !desc || !tagsStr) {
 		console.error(
-			"Usage: node scripts/add-friend.mjs --title=NAME --siteurl=URL --imgurl=URL --desc=DESC --tags=TAG1,TAG2",
+			"Usage: bun scripts/add-friend.mjs --title=NAME --siteurl=URL --imgurl=URL --desc=DESC --tags=TAG1,TAG2",
 		);
 		console.error("All parameters are required.");
 		process.exit(1);

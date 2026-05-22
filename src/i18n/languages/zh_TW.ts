@@ -35,6 +35,7 @@ export const zh_TW: Translation = {
 	[Key.friendsCopyLink]: "複製鏈接",
 	[Key.friendsCopySuccess]: "已複製",
 	[Key.friendsTags]: "標籤",
+	[Key.friendsApply]: "申請友鏈",
 	[Key.untitled]: "無標題",
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "無標籤",

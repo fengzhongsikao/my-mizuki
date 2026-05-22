@@ -35,6 +35,7 @@ export const ja: Translation = {
 	[Key.friendsCopyLink]: "リンク",
 	[Key.friendsCopySuccess]: "コピーしました",
 	[Key.friendsTags]: "タグ",
+	[Key.friendsApply]: "友達リンクを申請",
 	[Key.untitled]: "無題",
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "タグはありません",
