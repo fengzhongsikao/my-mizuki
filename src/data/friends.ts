@@ -59,6 +59,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://www.atticus0723.top/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 7,
+		title: "upxuu",
+		imgurl: "https://upxuu.com/images/20260214145619.jpg",
+		desc: "逐光而上",
+		siteurl: "https://upxuu.com/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
