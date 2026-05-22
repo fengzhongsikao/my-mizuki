@@ -72,18 +72,6 @@ export const skillsData: Skill[] = [
 		color: "#4FC08D",
 	},
 	{
-		id: "angular",
-		name: "Angular",
-		description:
-			"An enterprise-level frontend framework developed by Google, a complete single-page application solution.",
-		icon: "logos:angular-icon",
-		category: "frontend",
-		level: "beginner",
-		experience: { years: 0, months: 9 },
-		projects: ["enterprise-dashboard"],
-		color: "#DD0031",
-	},
-	{
 		id: "nextjs",
 		name: "Next.js",
 		description:
@@ -94,18 +82,6 @@ export const skillsData: Skill[] = [
 		experience: { years: 1, months: 4 },
 		projects: ["e-commerce-frontend", "blog-platform"],
 		color: "#616161", // 更改为深灰色，避免纯黑色
-	},
-	{
-		id: "nuxtjs",
-		name: "Nuxt.js",
-		description:
-			"An intuitive Vue.js framework supporting server-side rendering and static site generation.",
-		icon: "logos:nuxt-icon",
-		category: "frontend",
-		level: "beginner",
-		experience: { years: 0, months: 6 },
-		projects: ["vue-ssr-app"],
-		color: "#00DC82",
 	},
 	{
 		id: "astro",
@@ -144,18 +120,6 @@ export const skillsData: Skill[] = [
 		color: "#CF649A",
 	},
 	{
-		id: "webpack",
-		name: "Webpack",
-		description:
-			"A static module bundler for modern JavaScript applications.",
-		icon: "logos:webpack",
-		category: "frontend",
-		level: "intermediate",
-		experience: { years: 1, months: 10 },
-		projects: ["custom-build-tool", "spa-application"],
-		color: "#8DD6F9",
-	},
-	{
 		id: "vite",
 		name: "Vite",
 		description:
@@ -170,18 +134,6 @@ export const skillsData: Skill[] = [
 
 	// Backend Skills
 	{
-		id: "nodejs",
-		name: "Node.js",
-		description:
-			"A JavaScript runtime based on Chrome V8 engine, used for server-side development.",
-		icon: "logos:nodejs-icon",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 2, months: 3 },
-		projects: ["data-visualization-tool", "e-commerce-platform"],
-		color: "#339933",
-	},
-	{
 		id: "python",
 		name: "Python",
 		description:
@@ -191,30 +143,6 @@ export const skillsData: Skill[] = [
 		level: "intermediate",
 		experience: { years: 1, months: 10 },
 		color: "#3776AB",
-	},
-	{
-		id: "java",
-		name: "Java",
-		description:
-			"A mainstream programming language for enterprise application development, cross-platform and object-oriented.",
-		icon: "logos:java",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 2, months: 0 },
-		projects: ["enterprise-system", "microservices-api"],
-		color: "#ED8B00",
-	},
-	{
-		id: "csharp",
-		name: "C#",
-		description:
-			"A modern object-oriented programming language developed by Microsoft, suitable for the .NET ecosystem.",
-		icon: "devicon:csharp",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 6 },
-		projects: ["desktop-application", "web-api"],
-		color: "#239120",
 	},
 	{
 		id: "go",
@@ -241,111 +169,16 @@ export const skillsData: Skill[] = [
 		color: "#CE422B",
 	},
 	{
-		id: "cpp",
-		name: "C++",
+		id: "fastapi",
+		name: "FastAPI",
 		description:
-			"A high-performance systems programming language widely used in game development, system software, and embedded development.",
-		icon: "logos:c-plusplus",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 4 },
-		projects: ["game-engine", "system-optimization"],
-		color: "#00599C",
-	},
-	{
-		id: "c",
-		name: "C",
-		description:
-			"A low-level systems programming language, the foundation for operating systems and embedded systems development.",
-		icon: "logos:c",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 2 },
-		projects: ["embedded-system", "kernel-module"],
-		color: "#A8B9CC",
-	},
-	{
-		id: "kotlin",
-		name: "Kotlin",
-		description:
-			"A modern programming language developed by JetBrains, fully compatible with Java, the preferred choice for Android development.",
-		icon: "logos:kotlin-icon",
-		category: "backend",
-		level: "beginner",
-		experience: { years: 0, months: 8 },
-		projects: ["android-app", "kotlin-backend"],
-		color: "#7F52FF",
-	},
-	{
-		id: "swift",
-		name: "Swift",
-		description:
-			"A modern programming language developed by Apple for iOS, macOS, watchOS, and tvOS development.",
-		icon: "logos:swift",
-		category: "backend",
-		level: "beginner",
-		experience: { years: 0, months: 6 },
-		projects: ["ios-app", "macos-tool"],
-		color: "#FA7343",
-	},
-	{
-		id: "ruby",
-		name: "Ruby",
-		description:
-			"A dynamic, open-source programming language focusing on simplicity and productivity, the foundation of the Rails framework.",
-		icon: "logos:ruby",
-		category: "backend",
-		level: "beginner",
-		experience: { years: 0, months: 4 },
-		projects: ["web-prototype"],
-		color: "#CC342D",
-	},
-	{
-		id: "php",
-		name: "PHP",
-		description:
-			"A widely-used server-side scripting language, particularly suitable for web development.",
-		icon: "logos:php",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 6 },
-		projects: ["cms-system", "e-commerce-backend"],
-		color: "#777BB4",
-	},
-	{
-		id: "express",
-		name: "Express.js",
-		description: "A fast, minimalist Node.js web application framework.",
-		icon: "simple-icons:express",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 8 },
-		projects: ["data-visualization-tool"],
-		color: "#616161", // 更改为深灰色，避免纯黑色
-	},
-	{
-		id: "spring",
-		name: "Spring Boot",
-		description:
-			"The most popular enterprise application development framework in the Java ecosystem.",
-		icon: "logos:spring-icon",
-		category: "backend",
-		level: "intermediate",
-		experience: { years: 1, months: 4 },
-		projects: ["enterprise-system", "rest-api"],
-		color: "#6DB33F",
-	},
-	{
-		id: "django",
-		name: "Django",
-		description:
-			"A high-level Python web framework with rapid development and clean, pragmatic design.",
-		icon: "logos:django-icon",
+			"FastAPI 是一个用于构建 API 的现代、快速（高性能）的 Web 框架，使用 Python 并基于标准的 Python 类型提示。",
+		icon: "logos:fastapi-icon",
 		category: "backend",
 		level: "beginner",
 		experience: { years: 0, months: 6 },
 		projects: ["blog-backend"],
-		color: "#092E20",
+		color: "#009485",
 	},
 
 	// Database Skills
@@ -408,18 +241,6 @@ export const skillsData: Skill[] = [
 		projects: ["mobile-app", "desktop-tool"],
 		color: "#003B57",
 	},
-	{
-		id: "firebase",
-		name: "Firebase",
-		description:
-			"Google's mobile and web application development platform providing real-time database and authentication services.",
-		icon: "simple-icons:firebase",
-		category: "database",
-		level: "intermediate",
-		experience: { years: 0, months: 10 },
-		projects: ["task-manager-app"],
-		color: "#FFCA28",
-	},
 
 	// Tools
 	{
@@ -481,18 +302,6 @@ export const skillsData: Skill[] = [
 		color: "#21D789",
 	},
 	{
-		id: "rider",
-		name: "Rider",
-		description:
-			"A cross-platform .NET IDE by JetBrains supporting development in C#, VB.NET, F#, and other languages.",
-		icon: "logos:rider",
-		category: "tools",
-		level: "beginner",
-		experience: { years: 0, months: 8 },
-		projects: ["dotnet-api", "desktop-app"],
-		color: "#616161", // 更改为深灰色，避免纯黑色
-	},
-	{
 		id: "goland",
 		name: "GoLand",
 		description:
@@ -516,18 +325,6 @@ export const skillsData: Skill[] = [
 		color: "#2496ED",
 	},
 	{
-		id: "kubernetes",
-		name: "Kubernetes",
-		description:
-			"A container orchestration platform for automating deployment, scaling, and management of containerized applications.",
-		icon: "logos:kubernetes",
-		category: "tools",
-		level: "beginner",
-		experience: { years: 0, months: 4 },
-		projects: ["microservices-deployment"],
-		color: "#326CE5",
-	},
-	{
 		id: "nginx",
 		name: "Nginx",
 		description: "A high-performance web server and reverse proxy server.",
@@ -537,54 +334,6 @@ export const skillsData: Skill[] = [
 		experience: { years: 1, months: 2 },
 		projects: ["web-server-config", "load-balancer"],
 		color: "#009639",
-	},
-	{
-		id: "apache",
-		name: "Apache HTTP Server",
-		description:
-			"The world's most popular web server software, a stable and reliable HTTP server.",
-		icon: "logos:apache",
-		category: "tools",
-		level: "intermediate",
-		experience: { years: 1, months: 6 },
-		projects: ["traditional-web-server", "php-hosting"],
-		color: "#D22128",
-	},
-	{
-		id: "openresty",
-		name: "OpenResty",
-		description:
-			"A high-performance web platform based on Nginx and LuaJIT, supporting dynamic web application development.",
-		icon: "simple-icons:nginx",
-		category: "tools",
-		level: "beginner",
-		experience: { years: 0, months: 8 },
-		projects: ["api-gateway", "dynamic-routing"],
-		color: "#00A693",
-	},
-	{
-		id: "tomcat",
-		name: "Apache Tomcat",
-		description:
-			"A Java Servlet container and web server, the standard deployment environment for Java web applications.",
-		icon: "logos:tomcat",
-		category: "tools",
-		level: "intermediate",
-		experience: { years: 1, months: 4 },
-		projects: ["java-web-app", "servlet-container"],
-		color: "#F8DC75",
-	},
-	{
-		id: "aws",
-		name: "AWS",
-		description:
-			"Amazon's cloud platform providing comprehensive cloud computing solutions.",
-		icon: "logos:aws",
-		category: "tools",
-		level: "intermediate",
-		experience: { years: 1, months: 0 },
-		projects: ["cloud-deployment", "serverless-app"],
-		color: "#FF9900",
 	},
 	{
 		id: "linux",
@@ -597,29 +346,6 @@ export const skillsData: Skill[] = [
 		experience: { years: 2, months: 0 },
 		projects: ["server-management", "shell-scripting"],
 		color: "#FCC624",
-	},
-	{
-		id: "postman",
-		name: "Postman",
-		description:
-			"An API development and testing tool that simplifies API design, testing, and documentation.",
-		icon: "logos:postman-icon",
-		category: "tools",
-		level: "intermediate",
-		experience: { years: 1, months: 8 },
-		projects: ["api-testing", "api-documentation"],
-		color: "#FF6C37",
-	},
-	{
-		id: "figma",
-		name: "Figma",
-		description:
-			"A collaborative interface design tool for UI/UX design and prototyping.",
-		icon: "logos:figma",
-		category: "tools",
-		level: "intermediate",
-		experience: { years: 1, months: 6 },
-		color: "#F24E1E",
 	},
 	{
 		id: "photoshop",
@@ -645,41 +371,5 @@ export const skillsData: Skill[] = [
 		experience: { years: 0, months: 6 },
 		projects: ["modern-api"],
 		color: "#E10098",
-	},
-	{
-		id: "elasticsearch",
-		name: "Elasticsearch",
-		description:
-			"A distributed search and analytics engine used for full-text search and data analysis.",
-		icon: "logos:elasticsearch",
-		category: "other",
-		level: "beginner",
-		experience: { years: 0, months: 4 },
-		projects: ["search-system"],
-		color: "#005571",
-	},
-	{
-		id: "jest",
-		name: "Jest",
-		description:
-			"A JavaScript testing framework focused on simplicity and ease of use.",
-		icon: "logos:jest",
-		category: "other",
-		level: "intermediate",
-		experience: { years: 1, months: 2 },
-		projects: ["unit-testing", "integration-testing"],
-		color: "#C21325",
-	},
-	{
-		id: "cypress",
-		name: "Cypress",
-		description:
-			"A modern end-to-end testing framework for web applications.",
-		icon: "logos:cypress-icon",
-		category: "other",
-		level: "beginner",
-		experience: { years: 0, months: 8 },
-		projects: ["e2e-testing"],
-		color: "#17202C",
 	},
 ];

@@ -19,6 +19,21 @@ export const friendsData: FriendItem[] = [
 		desc: "喵喵喵喵喵喵",
 		siteurl: "https://dkrain.com/",
 		tags: ["个人博客"],
+	},	
+	{
+		id: 2,
+		title: "atdunbg",
+		imgurl: "https://atdunbg.github.io/_astro/demo-avatar.CxcI0ivM_1nbuVe.webp",
+		desc: "一个又菜又爱学的技术小白",
+		siteurl: "https://atdunbg.github.io/",
+		tags: ["个人博客"],
+	},{
+		id: 3,
+		title: "ElysiumStack",
+		imgurl: "https://elysium-stack.cn/upload/c4d9cffe-2541-40d3-b8b9-85f5827a2dc3.png",
+		desc: "不会摄影的设计师不是优秀的旅行家",
+		siteurl: "https://elysium-stack.cn/",
+		tags: ["个人博客"],
 	},
 ];
 

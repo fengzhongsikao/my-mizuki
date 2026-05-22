@@ -54,9 +54,9 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "风起",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/xiaologo.webp",
+		icon: "/assets/home/xiaologo.webp",
 		// 网站Logo图片路径
-		logo: "assets/home/xiaologo.webp",
+		logo: "/assets/home/xiaologo.webp",
 	},
 
 	// 页面自动缩放配置
@@ -460,13 +460,15 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	showFloatingPlayer: true, // 显示悬浮播放器 UI
 	floatingEntryMode: "fab", // 悬浮入口模式："default" 为独立悬浮播放器，"fab" 为集成到通用 FAB 组
-	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
+	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
+		"https://meting.elysium-stack.cn/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+	id: "195683561", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
-	type: "playlist", // 播单类型
+	type: "album", // 播单类型
 };
+// 免费的音乐源
+// https://meting.elysium-stack.cn/api?server=netease&type=search&id=周杰伦
 
 export const footerConfig: FooterConfig = {
 	enable: false, // 是否启用Footer HTML注入功能
