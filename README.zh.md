@@ -4,7 +4,7 @@
 一个现代化、功能丰富的静态博客模板，基于 [Astro](https://astro.build) 构建，具有先进的功能和精美的设计。
 
 [![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen)](https://nodejs.org/)
-[![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)](https://pnpm.io/)
+[![bun](https://img.shields.io/badge/bun-1.2-f9f9f9?logo=bun)](https://bun.sh/)
 [![Astro](https://img.shields.io/badge/Astro-6.3.0-orange)](https://astro.build/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue)](https://www.typescriptlang.org/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache)](https://opensource.org/licenses/Apache-2.0)
@@ -116,11 +116,8 @@
 
 2. **安装依赖：**
    ```bash
-   # 如果没有安装 pnpm，先安装
-   npm install -g pnpm
-   
    # 安装项目依赖
-   pnpm install
+   bun install
    ```
 
 3. **配置博客：**
@@ -131,13 +128,13 @@
 
 4. **启动开发服务器：**
    ```bash
-   pnpm dev
+   bun run dev
    ```
    博客将在 `http://localhost:4321` 可用
 
 ### 📝 内容管理
 
-- **创建新文章：** `pnpm new-post <文件名>`
+- **创建新文章：** `bun run new-post <文件名>`
 - **编辑文章：** 修改 `src/content/posts/` 中的文件
 - **自定义页面：** 编辑 `src/content/spec/` 中的特殊页面
 - **添加图片：** 将图片放在 `src/assets/` 或 `public/` 中
@@ -239,15 +236,15 @@ Mizuki 支持超越标准 GitHub Flavored Markdown 的增强功能：
 
 | 命令                       | 操作                                    |
 |:---------------------------|:---------------------------------------|
-| `pnpm install`             | 安装依赖                               |
-| `pnpm dev`                 | 在 `localhost:4321` 启动本地开发服务器 |
-| `pnpm build`               | 构建生产站点到 `./dist/`               |
-| `pnpm preview`             | 在部署前本地预览构建                   |
-| `pnpm check`               | 运行 Astro 错误检查                    |
-| `pnpm format`              | 使用 Prettier 格式化代码                  |
-| `pnpm lint`                | 检查并修复代码问题                     |
-| `pnpm new-post <文件名>`   | 创建新博客文章                         |
-| `pnpm astro ...`           | 运行 Astro CLI 命令                    |
+| `bun install`              | 安装依赖                               |
+| `bun run dev`              | 在 `localhost:4321` 启动本地开发服务器 |
+| `bun run build`            | 构建生产站点到 `./dist/`               |
+| `bun run preview`          | 在部署前本地预览构建                   |
+| `bun run check`            | 运行 Astro 错误检查                    |
+| `bun run format`           | 使用 Prettier 格式化代码                  |
+| `bun run lint`             | 检查并修复代码问题                     |
+| `bun run new-post <文件名>` | 创建新博客文章                         |
+| `bun run astro ...`        | 运行 Astro CLI 命令                    |
 
 ## 🎯 配置指南
 
@@ -298,7 +295,7 @@ Mizuki 支持将代码和内容分成两个独立的仓库管理,适合团队协
 ```bash
 # 方式 1: 本地模式 (推荐新手)
 # 不创建 .env 文件,直接运行
-pnpm dev
+bun run dev
 
 # 方式 2: 内容分离模式
 # 1. 复制配置文件
@@ -309,7 +306,7 @@ ENABLE_CONTENT_SYNC=true
 CONTENT_REPO_URL=https://github.com/your-username/Mizuki-Content.git
 
 # 3. 同步内容
-pnpm run sync-content
+bun run sync-content
 ```
 
 **功能特性**:

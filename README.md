@@ -4,7 +4,7 @@
 A modern, feature-rich static blog template built with [Astro](https://astro.build), featuring advanced functionality and beautiful design.
 
 [![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen)](https://nodejs.org/)
-[![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)](https://pnpm.io/)
+[![bun](https://img.shields.io/badge/bun-1.2-f9f9f9?logo=bun)](https://bun.sh/)
 [![Astro](https://img.shields.io/badge/Astro-6.3.0-orange)](https://astro.build/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue)](https://www.typescriptlang.org/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache)](https://opensource.org/licenses/Apache-2.0)
@@ -115,11 +115,8 @@ Get started quickly with our comprehensive documentation. Whether you're customi
 
 2. **Install dependencies:**
    ```bash
-   # Install pnpm if not already installed
-   npm install -g pnpm
-   
    # Install project dependencies
-   pnpm install
+   bun install
    ```
 
 3. **Configure your blog:**
@@ -129,13 +126,13 @@ Get started quickly with our comprehensive documentation. Whether you're customi
 
 4. **Start the development server:**
    ```bash
-   pnpm dev
+   bun run dev
    ```
    Your blog will be available at `http://localhost:4321`
 
 ### 📝 Content Management
 
-- **Create new posts:** `pnpm new-post <filename>`
+- **Create new posts:** `bun run new-post <filename>`
 - **Edit posts:** Modify files in `src/content/posts/`
 - **Customize special pages:** Edit files in `src/content/spec/`
 - **Add images:** Place images in `src/assets/` or `public/`
@@ -237,15 +234,15 @@ All commands are run from the project root:
 
 | Command                    | Action                                   |
 |:---------------------------|:-----------------------------------------|
-| `pnpm install`             | Install dependencies                     |
-| `pnpm dev`                 | Start local dev server at `localhost:4321` |
-| `pnpm build`               | Build production site to `./dist/`       |
-| `pnpm preview`             | Preview build locally before deployment  |
-| `pnpm check`               | Run Astro error checking                 |
-| `pnpm format`              | Format code with Prettier                   |
-| `pnpm lint`                | Check and fix code issues                |
-| `pnpm new-post <filename>` | Create a new blog post                   |
-| `pnpm astro ...`           | Run Astro CLI commands                   |
+| `bun install`              | Install dependencies                     |
+| `bun run dev`              | Start local dev server at `localhost:4321` |
+| `bun run build`            | Build production site to `./dist/`       |
+| `bun run preview`          | Preview build locally before deployment  |
+| `bun run check`            | Run Astro error checking                 |
+| `bun run format`           | Format code with Prettier                   |
+| `bun run lint`             | Check and fix code issues                |
+| `bun run new-post <filename>` | Create a new blog post                   |
+| `bun run astro ...`        | Run Astro CLI commands                   |
 
 ## 🎯 Configuration Guide
 
@@ -296,7 +293,7 @@ Mizuki supports separating code and content into two independent repositories, s
 ```bash
 # Method 1: Local Mode (recommended for beginners)
 # No need to create .env file, run directly
-pnpm dev
+bun run dev
 
 # Method 2: Content Separation Mode
 # 1. Copy configuration file
@@ -307,7 +304,7 @@ ENABLE_CONTENT_SYNC=true
 CONTENT_REPO_URL=https://github.com/your-username/Mizuki-Content.git
 
 # 3. Sync content
-pnpm run sync-content
+bun run sync-content
 ```
 
 **Features**:

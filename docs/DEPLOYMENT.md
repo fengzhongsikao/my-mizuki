@@ -68,7 +68,7 @@ export default defineConfig({
 取消注释环境变量部分:
 ```yaml
 - name: Build site
-  run: pnpm run build
+  run: bun run build
   env:
     ENABLE_CONTENT_SYNC: true
     CONTENT_REPO_URL: ${{ secrets.CONTENT_REPO_URL }}
@@ -108,7 +108,7 @@ export default defineConfig({
     token: ${{ secrets.PAT_TOKEN }}
 
 - name: Build site
-  run: pnpm run build
+  run: bun run build
   env:
     ENABLE_CONTENT_SYNC: true
     CONTENT_REPO_URL: https://${{ secrets.PAT_TOKEN }}@github.com/other-user/repo.git
@@ -141,7 +141,7 @@ export default defineConfig({
 
 2. **配置项目**:
    - Framework Preset: Astro
-   - Build Command: `pnpm build` (默认)
+   - Build Command: `bun run build` (默认)
    - Output Directory: `dist` (默认)
 
 3. **部署**:
@@ -201,7 +201,7 @@ USE_SUBMODULE=true
    - 选择你的 Mizuki 仓库
 
 2. **配置构建**:
-   - Build command: `pnpm build`
+   - Build command: `bun run build`
    - Publish directory: `dist`
 
 3. **环境变量** (如果使用内容分离):
@@ -223,12 +223,11 @@ USE_SUBMODULE=true
 
 ```toml
 [build]
-  command = "pnpm build"
+  command = "bun run build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
-  PNPM_VERSION = "9"
   # 如果使用内容分离
   ENABLE_CONTENT_SYNC = "true"
   CONTENT_REPO_URL = "https://github.com/your-username/Mizuki-Content.git"
@@ -248,7 +247,7 @@ USE_SUBMODULE=true
 
 2. **配置构建**:
    - Framework preset: Astro
-   - Build command: `pnpm build`
+   - Build command: `bun run build`
    - Build output directory: `dist`
 
 3. **环境变量** (如果使用内容分离):
@@ -264,7 +263,7 @@ USE_SUBMODULE=false  # ⚠️ Cloudflare Pages 默认不支持 submodule
 
 ⚠️ Cloudflare Pages 默认不支持 Git Submodule，建议:
 - 使用独立仓库模式: `USE_SUBMODULE=false`
-- 或在构建命令中手动初始化: `git submodule update --init && pnpm build`
+- 或在构建命令中手动初始化: `git submodule update --init && bun run build`
 
 ---
 
@@ -282,7 +281,7 @@ USE_SUBMODULE=false  # ⚠️ Cloudflare Pages 默认不支持 submodule
 ```
 
 **工作原理**:
-1. `pnpm build` 执行前自动运行 `prebuild` 钩子
+1. `bun run build` 执行前自动运行 `prebuild` 钩子
 2. 检查 `ENABLE_CONTENT_SYNC` 环境变量
 3. 如果为 `true`，从远程仓库同步内容到 `src/content/` 和 `public/images/`
 4. 如果为 `false` 或未设置，跳过同步，使用本地内容

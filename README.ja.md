@@ -4,7 +4,7 @@
 [Astro](https://astro.build) で構築された高度な機能と美しいデザインを備えた、モダンで機能が豊富な静的ブログテンプレート。
 
 [![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen)](https://nodejs.org/)
-[![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue)](https://pnpm.io/)
+[![bun](https://img.shields.io/badge/bun-1.2-f9f9f9?logo=bun)](https://bun.sh/)
 [![Astro](https://img.shields.io/badge/Astro-6.3.0-orange)](https://astro.build/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue)](https://www.typescriptlang.org/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache)](https://opensource.org/licenses/Apache-2.0)
@@ -114,11 +114,8 @@
 
 2. **依存関係をインストール：**
    ```bash
-   # pnpmがインストールされていない場合はインストール
-   npm install -g pnpm
-   
    # プロジェクトの依存関係をインストール
-   pnpm install
+   bun install
    ```
 
 3. **ブログを設定：**
@@ -128,13 +125,13 @@
 
 4. **開発サーバーを起動：**
    ```bash
-   pnpm dev
+   bun run dev
    ```
    ブログは`http://localhost:4321`で利用可能になります
 
 ### 📝 コンテンツ管理
 
-- **新しい投稿を作成：** `pnpm new-post <ファイル名>`
+- **新しい投稿を作成：** `bun run new-post <ファイル名>`
 - **投稿を編集：** `src/content/posts/`内のファイルを修正
 - **特別ページをカスタマイズ：** `src/content/spec/`内のファイルを編集
 - **画像を追加：** 画像を`src/assets/`または`public/`に配置
@@ -236,15 +233,15 @@ Mizukiは標準のGitHub Flavored Markdownを超える拡張機能をサポー�
 
 | コマンド                    | アクション                                |
 |:---------------------------|:----------------------------------------|
-| `pnpm install`             | 依存関係をインストール                     |
-| `pnpm dev`                 | `localhost:4321`でローカル開発サーバーを起動 |
-| `pnpm build`               | 本番サイトを`./dist/`にビルド              |
-| `pnpm preview`             | デプロイ前にビルドをローカルでプレビュー     |
-| `pnpm check`               | Astroエラーチェックを実行                  |
-| `pnpm format`              | Prettierでコードをフォーマット                |
-| `pnpm lint`                | コードの問題をチェックして修正              |
-| `pnpm new-post <ファイル名>` | 新しいブログ投稿を作成                     |
-| `pnpm astro ...`           | Astro CLIコマンドを実行                   |
+| `bun install`              | 依存関係をインストール                     |
+| `bun run dev`              | `localhost:4321`でローカル開発サーバーを起動 |
+| `bun run build`            | 本番サイトを`./dist/`にビルド              |
+| `bun run preview`          | デプロイ前にビルドをローカルでプレビュー     |
+| `bun run check`            | Astroエラーチェックを実行                  |
+| `bun run format`           | Prettierでコードをフォーマット                |
+| `bun run lint`             | コードの問題をチェックして修正              |
+| `bun run new-post <ファイル名>` | 新しいブログ投稿を作成                     |
+| `bun run astro ...`        | Astro CLIコマンドを実行                   |
 
 ## 🎯 設定ガイド
 
@@ -295,7 +292,7 @@ Mizukiは、コードとコンテンツを2つの独立したリポジトリに�
 ```bash
 # 方法 1: ローカルモード（初心者向け）
 # .envファイルを作成せず、そのまま実行
-pnpm dev
+bun run dev
 
 # 方法 2: コンテンツ分離モード
 # 1. 設定ファイルをコピー
@@ -306,7 +303,7 @@ ENABLE_CONTENT_SYNC=true
 CONTENT_REPO_URL=https://github.com/your-username/Mizuki-Content.git
 
 # 3. コンテンツを同期
-pnpm run sync-content
+bun run sync-content
 ```
 
 **機能**:
