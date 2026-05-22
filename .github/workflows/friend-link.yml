@@ -2,7 +2,7 @@ name: Friend Link Automation
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened]
   issue_comment:
     types: [created]
 
@@ -13,9 +13,7 @@ permissions:
 
 jobs:
   process-friend-link:
-    if: |
-      (github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'friend-link')) ||
-      (github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'friend-link') && github.event.comment.body == '/recheck')
+    if: (github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'friend-link')) || (github.event_name == 'issue_comment' && contains(github.event.issue.labels.*.name, 'friend-link') && github.event.comment.body == '/recheck')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
