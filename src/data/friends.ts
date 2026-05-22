@@ -35,6 +35,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://elysium-stack.cn/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 4,
+		title: "番茄主理人",
+		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=20447289&s=640",
+		desc: "坐而言不如起而行.",
+		siteurl: "https://fqzlr.com/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
