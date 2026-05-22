@@ -56,7 +56,7 @@ export const friendsData: FriendItem[] = [
 		title: "atticus",
 		imgurl: "https://www.atticus0723.top/avatar.png",
 		desc: "探索空间数据与现代前端的交汇",
-		siteurl: "www.atticus0723.top",
+		siteurl: "https://www.atticus0723.top/",
 		tags: ["个人博客"],
 	},
 ];
