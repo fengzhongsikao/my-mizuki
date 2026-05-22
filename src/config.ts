@@ -446,7 +446,8 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "欢迎光临~~基于 Muzuki博客搭建，请多指教~~", // 公告内容
+	content:
+		"🎉 站点全新升级！基于 Mizuki 主题重构，带来更流畅的浏览体验和更优雅的视觉风格。欢迎探索 ~", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
