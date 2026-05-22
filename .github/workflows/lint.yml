@@ -1,10 +1,7 @@
+# 已停用：仓库仅保留友链自动化，见 friend-link.yml
 name: Lint
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   workflow_dispatch:
 
 concurrency:
