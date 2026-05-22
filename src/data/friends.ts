@@ -43,6 +43,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://fqzlr.com/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 5,
+		title: "QgxsのBlog",
+		imgurl: "https://www.20210701.xyz/icon.jpeg",
+		desc: "放松心情，漫游四处，处处美景。",
+		siteurl: "https://www.20210701.xyz/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
