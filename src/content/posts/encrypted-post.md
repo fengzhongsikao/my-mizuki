@@ -10,6 +10,7 @@ hideHomeContent: true
 alias: "encrypted-example"
 tags: ["Test", "Encryption"]
 category: "Technology"
+draft: true
 ---
 
 This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
