@@ -3,26 +3,25 @@
 	"type": "module",
 	"version": "9.0",
 	"scripts": {
-		"sync-content": "node scripts/sync-content.js",
-		"init-content": "node scripts/init-content-repo.js",
-		"predev": "node scripts/sync-content.js || true",
-		"prebuild": "node scripts/sync-content.js || true",
+		"sync-content": "bun scripts/sync-content.js",
+		"init-content": "bun scripts/init-content-repo.js",
+		"predev": "bun scripts/sync-content.js || true",
+		"prebuild": "bun scripts/sync-content.js || true",
 		"dev": "astro dev",
 		"start": "astro dev",
 		"check": "astro check",
-		"update-anime": "node scripts/update-anime.mjs",
-		"update-bangumi": "node scripts/update-bangumi.mjs",
-		"update-bilibili": "node scripts/update-bilibili.mjs",
-		"build": "node scripts/update-anime.mjs && astro build && pagefind --site dist && node scripts/compress-fonts.js",
-		"submit": "node scripts/indexnow-submit.js",
+		"update-anime": "bun scripts/update-anime.mjs",
+		"update-bangumi": "bun scripts/update-bangumi.mjs",
+		"update-bilibili": "bun scripts/update-bilibili.mjs",
+		"build": "bun scripts/update-anime.mjs && astro build && pagefind --site dist && bun scripts/compress-fonts.js",
+		"submit": "bun scripts/indexnow-submit.js",
 		"preview": "astro preview",
 		"astro": "astro",
 		"type-check": "tsc --noEmit",
-		"new-post": "node scripts/new-post.js",
+		"new-post": "bun scripts/new-post.js",
 		"format": "prettier --write ./src",
 		"lint": "eslint ./src --fix",
-		"preinstall": "npx only-allow pnpm",
-		"compress-fonts": "node scripts/compress-fonts.js"
+		"compress-fonts": "bun scripts/compress-fonts.js"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.9",
@@ -106,5 +105,5 @@
 		"svelte-eslint-parser": "^1.6.1",
 		"typescript-eslint": "^8.59.3"
 	},
-	"packageManager": "pnpm@11.1.3"
+	"packageManager": "bun@1.2.5"
 }

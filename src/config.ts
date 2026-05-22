@@ -21,10 +21,10 @@ import { LinkPreset } from "./types/config";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "风起",
+	subtitle: "风起的个人博客",
 	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -42,8 +42,8 @@ export const siteConfig: SiteConfig = {
 		friends: true, // 友链页面开关
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
-		timeline: true, // 时间线页面开关
-		albums: true, // 相册页面开关
+		timeline: false, // 时间线页面开关
+		albums: false, // 相册页面开关
 		devices: true, // 设备页面开关
 	},
 
@@ -52,7 +52,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "风起的博客",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	bilibili: {
-		vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
+		vmid: "1265652806", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
 		fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
 		coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
 		useWebp: true, // 是否使用WebP格式（默认 true）
@@ -125,10 +125,9 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/wu1.jpeg",
+				"/assets/desktop-banner/wu2.jpeg",
+				"/assets/desktop-banner/wu3.jpeg",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.webp",
@@ -162,17 +161,16 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "わたしの部屋", // 主页横幅主标题
+			title: "风起的博客", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"无善无恶心之体，有善有恶意之动，知善知恶是良知，为善去恶是格物",
+				"天下之事，不可为者，其势不就，可为者，其应已周",
+				"知是行之始，行是知之成",
+				"此心不动，随机而动"
 			],
 			typewriter: {
-				enable: true, // 启用副标题打字机效果
+				enable: false, // 启用副标题打字机效果
 
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
@@ -245,10 +243,9 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
+			"/assets/desktop-banner/wu1.jpeg",
+			"/assets/desktop-banner/wu2.jpeg",
+			"/assets/desktop-banner/wu3.jpeg",
 		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/1.webp",
@@ -259,7 +256,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
-		enable: true, // 启用轮播
+		enable: false, // 启用轮播
 		interval: 5, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
@@ -274,12 +271,12 @@ export const navBarConfig: NavBarConfig = {
 		// 支持自定义导航栏链接，支持多级菜单
 		{
 			name: "Links",
-			url: "/links/",
+			url: "https://github.com/fengzhongsikao",
 			icon: "material-symbols:link",
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/LyraVoid/Mizuki",
+					url: "https://github.com/fengzhongsikao/windnote",
 					external: true,
 					icon: "fa7-brands:github",
 				},
@@ -289,12 +286,12 @@ export const navBarConfig: NavBarConfig = {
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-					icon: "mdi:git",
-				},
+				// {
+				// 	name: "Gitee",
+				// 	url: "https://gitee.com/matsuzakayuki/Mizuki",
+				// 	external: true,
+				// 	icon: "mdi:git",
+				// },
 			],
 		},
 		{
@@ -307,16 +304,16 @@ export const navBarConfig: NavBarConfig = {
 					url: "/anime/",
 					icon: "material-symbols:movie",
 				},
-				{
-					name: "Diary",
-					url: "/diary/",
-					icon: "material-symbols:book",
-				},
-				{
-					name: "Gallery",
-					url: "/albums/",
-					icon: "material-symbols:photo-library",
-				},
+				// {
+				// 	name: "Diary",
+				// 	url: "/diary/",
+				// 	icon: "material-symbols:book",
+				// },
+				// {
+				// 	name: "Gallery",
+				// 	url: "/albums/",
+				// 	icon: "material-symbols:photo-library",
+				// },
 				{
 					name: "Devices",
 					url: "/devices/",
@@ -368,28 +365,23 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
-	bio: "世界は大きい、君は行かなければならない",
+	avatar: "assets/images/xiao.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "风起",
+	bio: "你未看此花时，此花与汝心同归于寂：你来看此花时，则此花颜色一时明白起来：便知此花不在你的心外。",
 	typewriter: {
-		enable: true, // 启用个人简介打字机效果
+		enable: false, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
 		{
 			name: "Bilibili",
 			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://space.bilibili.com/1265652806",
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/fengzhongsikao",
 		},
 		{
 			name: "Codeberg",
@@ -475,7 +467,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
+	content: "基于 Mizuku 静态博客框架生成。", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
