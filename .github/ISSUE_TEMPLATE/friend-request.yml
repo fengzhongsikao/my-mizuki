@@ -1,0 +1,65 @@
+name: 🤝 申请友链
+description: 申请交换友情链接
+title: "[友链申请] "
+labels: ["friend-link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🤝 友链申请
+
+        请填写以下信息申请交换友链，提交后会自动审核处理。
+
+        ## 申请要求
+        - ✅ 请先在您的网站添加本站的友情链接
+        - ✅ 网站内容符合法律法规
+
+        ## 本站信息
+        - **名称**: 风中的思绪
+        - **链接**: `https://fengzhongsikao.com`
+        - **描述**: 风中的思绪，梦里的足迹
+
+  - type: input
+    id: site-name
+    attributes:
+      label: "站点名称"
+      description: "您的博客或网站名称"
+      placeholder: "例如: 我的博客"
+    validations:
+      required: true
+
+  - type: input
+    id: site-url
+    attributes:
+      label: "站点链接"
+      description: "您的网站完整 URL"
+      placeholder: "https://example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: avatar-url
+    attributes:
+      label: "头像/图标链接"
+      description: "您的网站头像或图标的完整 URL"
+      placeholder: "https://example.com/avatar.png"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "站点描述"
+      description: "一句话描述您的网站"
+      placeholder: "分享技术与生活的个人博客"
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: "标签"
+      description: "用逗号分隔，例如: 个人博客, 技术, 摄影"
+      placeholder: "个人博客, 技术"
+    validations:
+      required: true
