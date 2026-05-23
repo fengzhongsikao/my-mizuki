@@ -192,6 +192,24 @@ export const zh_CN: Translation = {
 	[Key.skillsByCategory]: "按分类分布",
 	[Key.noData]: "暂无数据",
 
+	// 游戏页面
+	[Key.games]: "游戏记录",
+	[Key.gamesSubtitle]: "我的游戏收藏与游玩经历",
+	[Key.gamesPlatformPC]: "PC",
+	[Key.gamesPlatformMobile]: "手游",
+	[Key.gamesPlatformConsole]: "主机",
+	[Key.gamesPlatformBoard]: "桌游",
+	[Key.gamesPlatformOther]: "其他",
+	[Key.gamesStatusPlaying]: "游玩中",
+	[Key.gamesStatusCompleted]: "已通关",
+	[Key.gamesStatusPlanned]: "计划中",
+	[Key.gamesStatusPaused]: "暂停",
+	[Key.gamesStatusDropped]: "弃坑",
+	[Key.gamesReleaseDate]: "公测时间",
+	[Key.gamesUid]: "UID",
+	[Key.gamesCopyUid]: "复制UID",
+	[Key.gamesWebsite]: "官网",
+
 	// 时间线页面
 	[Key.timeline]: "时间线",
 	[Key.timelineSubtitle]: "我的成长历程和重要里程碑",

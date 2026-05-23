@@ -24,14 +24,4 @@ export const devicesData: DeviceCategory = {
 			link: "https://www.oneplus.com/cn/13t",
 		},
 	],
-	Router: [
-		{
-			name: "GL-MT3000",
-			image: "/images/device/mt3000.webp",
-			specs: "1000Mbps / 2.5G",
-			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
-			link: "https://www.gl-inet.cn/products/gl-mt3000/",
-		},
-	],
 };

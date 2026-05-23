@@ -1,0 +1,131 @@
+---
+import { FilterTabs } from "@components/atoms/filter-tabs";
+import { PageHeader } from "@components/features/page-header";
+import { GameCard } from "@components/features/games";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+import { siteConfig } from "../config";
+import { gamesData } from "../data/games";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+
+if (!siteConfig.featurePages.games) {
+	return Astro.redirect("/404/");
+}
+
+const categories = [...new Set(gamesData.map((game) => game.category))];
+
+const getCategoryText = (category: string) => {
+	switch (category) {
+		case "pc":
+			return i18n(I18nKey.gamesPlatformPC);
+		case "mobile":
+			return i18n(I18nKey.gamesPlatformMobile);
+		case "console":
+			return i18n(I18nKey.gamesPlatformConsole);
+		case "board":
+			return i18n(I18nKey.gamesPlatformBoard);
+		case "other":
+			return i18n(I18nKey.gamesPlatformOther);
+		default:
+			return category;
+	}
+};
+
+const getCategoryIcon = (category: string) => {
+	switch (category) {
+		case "pc":
+			return "material-symbols:computer";
+		case "mobile":
+			return "material-symbols:smartphone";
+		case "console":
+			return "material-symbols:stadia-controller";
+		case "board":
+			return "material-symbols:table";
+		case "other":
+			return "material-symbols:widgets";
+		default:
+			return "material-symbols:category";
+	}
+};
+
+const filterTabs = [
+	{
+		value: "all",
+		label: i18n(I18nKey.friendsFilterAll),
+		icon: "material-symbols:apps",
+		count: gamesData.length,
+	},
+	...categories.map((category) => ({
+		value: category,
+		label: getCategoryText(category),
+		icon: getCategoryIcon(category),
+		count: gamesData.filter((g) => g.category === category).length,
+	})),
+];
+
+const title = i18n(I18nKey.games);
+const subtitle = i18n(I18nKey.gamesSubtitle);
+---
+
+<MainGridLayout title={title} description={subtitle}>
+	<script>
+		import("../scripts/right-sidebar-layout.js");
+		import { loadIconify } from "../utils/icon-loader";
+
+		loadIconify().catch((error) => {
+			console.error("Failed to load Iconify:", error);
+		});
+	</script>
+
+	<script is:inline src="/js/filter-tabs-handler.js"></script>
+
+	<div
+		class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+	>
+		<div class="card-base z-10 px-6 sm:px-9 py-6 relative w-full">
+			<PageHeader title={title} subtitle={subtitle} />
+
+			<div class="mb-8">
+				<FilterTabs tabs={filterTabs} dataAttr="category" />
+			</div>
+
+			<div id="games-grid" class="grid gap-6 items-stretch">
+				{gamesData.map((game) => <GameCard game={game} />)}
+			</div>
+
+			<div id="no-results" class="hidden text-center py-16">
+				<Icon
+					name="material-symbols:search-off-rounded"
+					class="text-6xl text-black/15 dark:text-white/15 mb-4"
+				/>
+				<p class="text-black/40 dark:text-white/40 text-lg">
+					No matching games
+				</p>
+			</div>
+		</div>
+	</div>
+</MainGridLayout>
+
+<style is:global>
+	#games-grid {
+		grid-template-columns: 1fr;
+	}
+
+	@media (min-width: 640px) {
+		#games-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	#main-grid[data-layout-mode="grid"] #games-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	@media (max-width: 639px) {
+		#main-grid[data-layout-mode="grid"] #games-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

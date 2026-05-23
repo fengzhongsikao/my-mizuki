@@ -188,6 +188,24 @@ enum I18nKey {
 	skillsByCategory = "skillsByCategory",
 	noData = "noData",
 
+	// Games page
+	games = "games",
+	gamesSubtitle = "gamesSubtitle",
+	gamesPlatformPC = "gamesPlatformPC",
+	gamesPlatformMobile = "gamesPlatformMobile",
+	gamesPlatformConsole = "gamesPlatformConsole",
+	gamesPlatformBoard = "gamesPlatformBoard",
+	gamesPlatformOther = "gamesPlatformOther",
+	gamesStatusPlaying = "gamesStatusPlaying",
+	gamesStatusCompleted = "gamesStatusCompleted",
+	gamesStatusPlanned = "gamesStatusPlanned",
+	gamesStatusPaused = "gamesStatusPaused",
+	gamesStatusDropped = "gamesStatusDropped",
+	gamesReleaseDate = "gamesReleaseDate",
+	gamesUid = "gamesUid",
+	gamesCopyUid = "gamesCopyUid",
+	gamesWebsite = "gamesWebsite",
+
 	// Timeline page
 	timeline = "timeline",
 	timelineSubtitle = "timelineSubtitle",

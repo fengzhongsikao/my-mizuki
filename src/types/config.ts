@@ -37,6 +37,7 @@ export interface SiteConfig {
 		friends: boolean; // 友链页面开关
 		projects: boolean; // 项目页面开关
 		skills: boolean; // 技能页面开关
+		games: boolean; // 游戏页面开关
 		timeline: boolean; // 时间线页面开关
 		albums: boolean; // 相册页面开关
 		devices: boolean; // 设备页面开关
@@ -170,6 +171,7 @@ export interface SiteConfig {
 	showLastModified: boolean; // 控制"上次编辑"卡片显示的开关
 	pageProgressBar?: PageProgressBarConfig; // 页面顶部进度条配置
 	thirdPartyAnalytics?: ThirdPartyAnalyticsConfig; // 第三方统计配置
+	friendRequestUrl?: string; // 友链申请链接，填写你的 GitHub 仓库地址（如 https://github.com/用户名/仓库名），需要在 GitHub 仓库的 Issues 中添加 "friend-link" 标签，留空则不显示申请友链区域
 }
 
 export interface Favicon {
@@ -188,7 +190,8 @@ export enum LinkPreset {
 	Albums = 6,
 	Projects = 7,
 	Skills = 8,
-	Timeline = 9,
+	Games = 9,
+	Timeline = 10,
 }
 
 export interface NavBarLink {

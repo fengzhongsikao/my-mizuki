@@ -249,6 +249,24 @@ export const ja: Translation = {
 	[Key.skillsByCategory]: "カテゴリー別",
 	[Key.noData]: "データなし",
 
+	// ゲームページ
+	[Key.games]: "ゲーム記録",
+	[Key.gamesSubtitle]: "ゲームコレクションとプレイ体験",
+	[Key.gamesPlatformPC]: "PC",
+	[Key.gamesPlatformMobile]: "モバイル",
+	[Key.gamesPlatformConsole]: "コンソール",
+	[Key.gamesPlatformBoard]: "ボードゲーム",
+	[Key.gamesPlatformOther]: "その他",
+	[Key.gamesStatusPlaying]: "プレイ中",
+	[Key.gamesStatusCompleted]: "クリア済み",
+	[Key.gamesStatusPlanned]: "予定",
+	[Key.gamesStatusPaused]: "一時停止",
+	[Key.gamesStatusDropped]: "途中放棄",
+	[Key.gamesReleaseDate]: "リリース",
+	[Key.gamesUid]: "UID",
+	[Key.gamesCopyUid]: "UIDをコピー",
+	[Key.gamesWebsite]: "公式サイト",
+
 	// タイムラインページ
 	[Key.timeline]: "タイムライン",
 	[Key.timelineSubtitle]: "成長への旅と重要なマイルストーン",

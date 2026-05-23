@@ -255,6 +255,24 @@ export const zh_TW: Translation = {
 	// 其他
 	[Key.noData]: "暫無資料",
 
+	// 遊戲頁面
+	[Key.games]: "遊戲記錄",
+	[Key.gamesSubtitle]: "我的遊戲收藏與遊玩經歷",
+	[Key.gamesPlatformPC]: "PC",
+	[Key.gamesPlatformMobile]: "手遊",
+	[Key.gamesPlatformConsole]: "主機",
+	[Key.gamesPlatformBoard]: "桌遊",
+	[Key.gamesPlatformOther]: "其他",
+	[Key.gamesStatusPlaying]: "遊玩中",
+	[Key.gamesStatusCompleted]: "已通關",
+	[Key.gamesStatusPlanned]: "計劃中",
+	[Key.gamesStatusPaused]: "暫停",
+	[Key.gamesStatusDropped]: "棄坑",
+	[Key.gamesReleaseDate]: "公測時間",
+	[Key.gamesUid]: "UID",
+	[Key.gamesCopyUid]: "複製UID",
+	[Key.gamesWebsite]: "官網",
+
 	// 密碼保護
 	[Key.passwordProtected]: "密碼保護",
 	[Key.passwordProtectedTitle]: "此內容受密碼保護",

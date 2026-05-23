@@ -1,4 +1,4 @@
-﻿import type {
+import type {
 	AnnouncementConfig,
 	CommentConfig,
 	ExpressiveCodeConfig,
@@ -25,7 +25,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 export const siteConfig: SiteConfig = {
 	title: "风起",
 	subtitle: "一个热爱技术、热爱生活的开发者。",
-	siteURL: "https://fengzhongsikao.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://blog.windstart.top/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-05-22", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	lang: SITE_LANG,
@@ -37,11 +37,12 @@ export const siteConfig: SiteConfig = {
 
 	// 特色页面开关配置（关闭未使用的页面有助于提升 SEO，关闭后请记得在 navbarConfig 中移除对应链接）
 	featurePages: {
-		anime: true, // 番剧页面开关
+		anime: false, // 番剧页面开关
 		diary: false, // 日记页面开关
 		friends: true, // 友链页面开关
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
+		games: true, // 游戏页面开关
 		timeline: true, // 时间线页面开关
 		albums: false, // 相册页面开关
 		devices: true, // 设备页面开关
@@ -161,11 +162,9 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "风起的博客",  // 主页横幅主标题
+			title: "风起的博客", // 主页横幅主标题
 
-			subtitle: [
-	
-			],
+			subtitle: [],
 			typewriter: {
 				enable: false, // 启用副标题打字机效果
 				speed: 100, // 打字速度（毫秒）
@@ -197,10 +196,10 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 留空以使用默认 favicon
 		{
-		  src: '/assets/home/xiaologo.webp',    // 图标文件路径
-		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		  sizes: '32x32',              // 可选，图标大小
-		}
+			src: "/assets/home/xiaologo.webp", // 图标文件路径
+			theme: "light", // 可选，指定主题 'light' | 'dark'
+			sizes: "32x32", // 可选，图标大小
+		},
 	],
 
 	// 字体配置
@@ -234,6 +233,8 @@ export const siteConfig: SiteConfig = {
 		enable: false, // 是否启用第三方统计（Microsoft Clarity），默认关闭，启用可能影响 Lighthouse 评分
 		clarityId: "", // Clarity 项目 ID
 	},
+
+	friendRequestUrl: "https://github.com/fengzhongsikao/my-mizuki", // 友链申请链接，填写你的 GitHub 仓库地址（如 https://github.com/用户名/仓库名），需要在 GitHub 仓库的 Issues 中添加 "friend-link" 标签，留空则不显示申请友链区域
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
@@ -288,11 +289,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
-				{
-					name: "Anime",
-					url: "/anime/",
-					icon: "material-symbols:movie",
-				},
+				// {
+				// 	name: "Anime",
+				// 	url: "/anime/",
+				// 	icon: "material-symbols:movie",
+				// },
 				// {
 				// 	name: "Diary",
 				// 	url: "/diary/",
@@ -303,6 +304,12 @@ export const navBarConfig: NavBarConfig = {
 				// 	url: "/albums/",
 				// 	icon: "material-symbols:photo-library",
 				// },
+				{
+					name: "Games",
+					url: "/games/",
+					icon: "material-symbols:gamepad",
+					external: false,
+				},
 				{
 					name: "Devices",
 					url: "/devices/",

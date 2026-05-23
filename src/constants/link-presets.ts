@@ -49,6 +49,11 @@ export const LinkPresets: Record<LinkPreset, NavBarLink> = {
 		url: "/skills/",
 		icon: "material-symbols:psychology",
 	},
+	[LinkPreset.Games]: {
+		name: i18n(I18nKey.games),
+		url: "/games/",
+		icon: "material-symbols:gamepad",
+	},
 	[LinkPreset.Timeline]: {
 		name: i18n(I18nKey.timeline),
 		url: "/timeline/",

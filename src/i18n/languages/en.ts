@@ -247,6 +247,24 @@ export const en: Translation = {
 	[Key.skillsByCategory]: "By Category",
 	[Key.noData]: "No data",
 
+	// Games Page
+	[Key.games]: "Game Records",
+	[Key.gamesSubtitle]: "My game collection and play experience",
+	[Key.gamesPlatformPC]: "PC",
+	[Key.gamesPlatformMobile]: "Mobile",
+	[Key.gamesPlatformConsole]: "Console",
+	[Key.gamesPlatformBoard]: "Board Game",
+	[Key.gamesPlatformOther]: "Other",
+	[Key.gamesStatusPlaying]: "Playing",
+	[Key.gamesStatusCompleted]: "Completed",
+	[Key.gamesStatusPlanned]: "Planned",
+	[Key.gamesStatusPaused]: "Paused",
+	[Key.gamesStatusDropped]: "Dropped",
+	[Key.gamesReleaseDate]: "Release",
+	[Key.gamesUid]: "UID",
+	[Key.gamesCopyUid]: "Copy UID",
+	[Key.gamesWebsite]: "Website",
+
 	// Timeline Page
 	[Key.timeline]: "Timeline",
 	[Key.timelineSubtitle]: "My growth journey and important milestones",
