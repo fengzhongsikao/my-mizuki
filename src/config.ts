@@ -210,7 +210,7 @@ export const siteConfig: SiteConfig = {
 			// 英文字体 - 优先级最高
 			// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
 			fontFamily: "霞鸢文楷",
-			fontWeight: "500",
+			fontWeight: "600",
 			localFonts: ["LXGWWenKai-Medium.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
