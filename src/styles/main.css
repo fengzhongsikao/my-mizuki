@@ -29,7 +29,7 @@
 /* 导入霞鸢文楷字体 */
 @font-face {
   font-family: "霞鸢文楷";
-  src: url("/assets/font/LXGWWenKai-Medium.ttf") format("truetype");
+  src: url("/assets/font/ChironGoRoundTCVF.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
   font-display: swap;

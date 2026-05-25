@@ -138,16 +138,12 @@ const bannerOffset =
 // 构建字体配置的 CSS 变量
 // ASCII 字体优先级最高（用于英文、数字等），CJK 字体作为回退
 let bodyFontFamily = "";
-let bodyFontWeight = "";
 if (siteConfig.font) {
 	const fonts: string[] = [];
 	// 先添加 ASCII 字体（优先级最高）
 	if (siteConfig.font.asciiFont?.fontFamily) {
 		const asciiFont = siteConfig.font.asciiFont.fontFamily;
 		fonts.push(asciiFont.includes(" ") ? `"${asciiFont}"` : asciiFont);
-		if (siteConfig.font.asciiFont.fontWeight) {
-			bodyFontWeight = String(siteConfig.font.asciiFont.fontWeight);
-		}
 	}
 	// 再添加 CJK 字体（作为回退，如果与 ASCII 字体相同则跳过）
 	if (
@@ -157,9 +153,6 @@ if (siteConfig.font) {
 	) {
 		const cjkFont = siteConfig.font.cjkFont.fontFamily;
 		fonts.push(cjkFont.includes(" ") ? `"${cjkFont}"` : cjkFont);
-	}
-	if (!bodyFontWeight && siteConfig.font.cjkFont?.fontWeight) {
-		bodyFontWeight = String(siteConfig.font.cjkFont.fontWeight);
 	}
 	// 添加系统字体作为最终回退
 	fonts.push(
@@ -235,9 +228,7 @@ if (siteConfig.font) {
 		class:list={[
 			{ "lg:is-home": isHomePage, "enable-banner": enableBanner },
 		]}
-		style={bodyFontFamily || bodyFontWeight
-			? `${bodyFontFamily ? `font-family: ${bodyFontFamily};` : ""}${bodyFontWeight ? ` font-weight: ${bodyFontWeight};` : ""}`.trim()
-			: ""}
+		style={bodyFontFamily ? `font-family: ${bodyFontFamily};` : ""}
 		data-overlayscrollbars-initialize
 	>
 		<noscript
