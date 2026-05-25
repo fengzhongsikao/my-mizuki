@@ -10,8 +10,8 @@ const gameColor = game.color || "#3B82F6";
 const buttonColor = "#638046";
 
 const isIconUrl =
-	game.icon &&
-	(game.icon.startsWith("http://") || game.icon.startsWith("https://"));
+	game.avator &&
+	(game.avator.startsWith("http://") || game.avator.startsWith("https://"));
 
 const getStatusText = (status: string) => {
 	switch (status) {
@@ -61,7 +61,7 @@ const getStatusColor = (status: string) => {
 				{
 					isIconUrl ? (
 						<img
-							src={game.icon}
+							src={game.avator}
 							alt={game.name}
 							class="w-full h-full object-cover"
 							loading="lazy"
