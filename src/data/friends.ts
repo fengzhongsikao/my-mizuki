@@ -67,6 +67,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://upxuu.com/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 8,
+		title: "尺素",
+		imgurl: "https://8872388.xyz/avatar.webp",
+		desc: "生命绚烂，别被黑暗压垮",
+		siteurl: "https://8872388.xyz/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
