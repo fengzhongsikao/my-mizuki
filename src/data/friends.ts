@@ -19,7 +19,7 @@ export const friendsData: FriendItem[] = [
 		desc: "喵喵喵喵喵喵",
 		siteurl: "https://dkrain.com/",
 		tags: ["个人博客"],
-	},	
+	},
 	{
 		id: 2,
 		title: "atdunbg",
@@ -27,7 +27,8 @@ export const friendsData: FriendItem[] = [
 		desc: "一个又菜又爱学的技术小白",
 		siteurl: "https://atdunbg.github.io/",
 		tags: ["个人博客"],
-	},{
+	},
+	{
 		id: 3,
 		title: "ElysiumStack",
 		imgurl: "https://elysium-stack.cn/upload/c4d9cffe-2541-40d3-b8b9-85f5827a2dc3.png",
@@ -70,7 +71,7 @@ export const friendsData: FriendItem[] = [
 	{
 		id: 8,
 		title: "尺素",
-		imgurl: "https://8872388.xyz/avatar.webp",
+		imgurl: "https://8872388.xyz/home/avatar.webp",
 		desc: "生命绚烂，别被黑暗压垮",
 		siteurl: "https://8872388.xyz/",
 		tags: ["个人博客"],

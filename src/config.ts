@@ -211,14 +211,14 @@ export const siteConfig: SiteConfig = {
 			// 指定为英文字体则无论字体包含多大范围，都只会保留 ASCII 字符子集
 			fontFamily: "霞鸢文楷",
 			fontWeight: "500",
-			localFonts: ["ChironGoRoundTCVF.ttf"],
+			localFonts: ["LXGWWenKaiMono-Medium.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
 			fontFamily: "霞鸢文楷",
 			fontWeight: "500",
-			localFonts: ["ChironGoRoundTCVF.ttf"],
+			localFonts: ["LXGWWenKaiMono-Medium.ttf"],
 			enableCompress: false, // 启用字体子集优化，减少字体文件大小
 		},
 	},
@@ -470,7 +470,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	floatingEntryMode: "fab", // 悬浮入口模式："default" 为独立悬浮播放器，"fab" 为集成到通用 FAB 组
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"https://meting.elysium-stack.cn/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+		"https://meting.mikus.ink/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
 	id: "195683561", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "album", // 播单类型
