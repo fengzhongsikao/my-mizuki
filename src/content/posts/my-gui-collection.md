@@ -19,6 +19,15 @@ draft: false
 [gtk](https://www.gtk.org/)
 [wxwidgets](https://www.wxwidgets.org/)
 [gtkmm](https://www.gtkmm.org/)
+[eui-neo](https://github.com/sudoevolve/EUI-NEO)
+
+### c++ 推荐
+| 你的需求 | 推荐框架 | 理由 |
+|---|---|---|
+| 大型商业应用/跨平台工业级 | **Qt** | 生态最完整，Widgets+QML 双模式，IDE 支持好 |
+| Linux 原生应用/GNOME 生态 | **gtk/gtkmm** | GNOME 桌面首选，C 接口稳定，多语言绑定丰富 |
+| 轻量级/学习成本低 | **wxWidgets** | 原生控件封装，接近系统原生外观 |
+| 最美观的现代化 C++ UI | **eui-neo** | C++17，OpenGL/Vulkan 渲染，声明式 DSL 布局，颜值最高，自带动画/异步/网络 |
 
 ## python gui 框架
 [ttkinter](https://tkinter.com/)
@@ -36,17 +45,14 @@ draft: false
 [gio](https://gioui.org/)
 [fyne](https://fyne.io/)
 
-## rust gui 框架
-[tauri](https://tauri.app/)
-[egui](https://egui.rs/)
-[iced](https://github.com/iced-rs/iced)
-[gpui](https://longbridge.github.io/gpui-component/zh-CN/)
-[dioxus](https://dioxuslabs.com/)
-[slint](https://github.com/slint-ui/slint)
-[leptos](https://www.leptos.dev/)
 
 ## dart gui 框架
 - [flutter](https://flutter.dev/)
+
+### dart 推荐
+| 推荐框架 | 理由 |
+|---|---|
+| **Flutter** | 全平台覆盖（iOS/Android/Web/Windows/macOS/Linux），Material Design 3 原生级美观，自研 Skia/Impeller 渲染引擎，Dart 语言丝滑热重载，Google 官方维护生态最强 |
 
 ## 前端 gui 框架
 [electron](https://www.electronjs.org/zh/docs/latest/)
@@ -54,6 +60,36 @@ draft: false
 
 ## php gui 框架
 [NativePHP](https://nativephp.com/)
+
+## rust gui 框架
+
+> 参考：[2025 年 Rust 桌面 GUI 框架最全横评](https://blog.csdn.net/jjhenda00/article/details/155137478) —— 基于 30+ 项目实战经验
+
+| 框架 | 类型 | 渲染方式 | 体积 | 适用场景 |
+|---|---|---|---|---|
+| [iced](https://github.com/iced-rs/iced) | 即时模式 | wgpu (GPU) | 5~8 MB | Win11 风格纯 Rust 项目首选 |
+| [egui](https://egui.rs/) | 即时模式 | wgpu/Web | 4~6 MB | 工具类、编辑器、调试面板 |
+| [dioxus](https://dioxuslabs.com/) | React 语法 | WebView/wgpu | 4~12 MB | 桌面+Web+移动三端统一 |
+| [slint](https://github.com/slint-ui/slint) | 声明式 (.slint) | 自研 GPU | 5~9 MB | 商业闭源项目 |
+| [tauri](https://tauri.app/) | WebView | 系统 WebView | 3~10 MB | 前端团队快速开发 |
+| [gpui](https://longbridge.github.io/gpui-component/zh-CN/) | GPU 渲染 | GPUI | — | Zed 编辑器同款引擎 |
+| [makepad](https://makepad.dev/) | 自研 DSL | GPU (自研) | — | 创意应用、实时编辑、跨平台 |
+| [druid](https://github.com/linebender/druid) | 保留模式 | piet | 8~12 MB | 已停止维护，继任者 Xilem |
+| [fltk-rs](https://github.com/fltk-rs/fltk-rs) | 传统控件 | FLTK (C++) | 3~6 MB | 传统 Windows 工具快速开发 |
+| [leptos](https://www.leptos.dev/) | 响应式 Web | WASM | — | Web 前端开发 |
+
+### 2026 年选型建议
+
+| 你的需求 | 推荐框架 | 理由 |
+|---|---|---|
+| 传统桌面应用（设置面板、文件管理器、数据库管理工具） | **iced** | 保留模式，Win11/macOS 风格原生渲染，纯 Rust 生态最成熟 |
+| 工具/仪表盘类应用（调试面板、性能监控、数据可视化） | **egui** | 即时模式，体积最小、启动最快，纯 Rust 嵌入式 UI 首选 |
+| 代码编辑器/IDE/通用桌面应用 | **gpui** | 纯 Rust + GPU 原生渲染，Zed 同款引擎，极致性能 |
+| 音乐播放器/创意可视化/实时预览工具 | **makepad** | 自研 GPU DSL + 实时 UI 热编辑，着色器级定制渲染 |
+| 桌面+Web+移动三端统一 | **dioxus** | React 语法，一套代码全平台，2026 年生态增长最快 |
+| 商业闭源项目/嵌入式设备 UI | **slint** | 商业授权可选，声明式语法，极致轻量 |
+| 前端团队快速出产品（音乐播放器、工具面板等） | **Tauri 2 + Vue3/React** | 复用 Web 生态，打包体积小，支持移动端 |
+| 学习/快速原型 | **fltk-rs** | 极简 API，几百行即可出完整程序 |
 
 ### 喜爱的gui 框架
 #### wails
