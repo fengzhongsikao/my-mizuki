@@ -84,6 +84,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://blog.tianhw.top/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 10,
+		title: "北に向かう",
+		imgurl: "https://ignorant.top/_astro/avatar.DT3z3YNN_TwrwT.webp",
+		desc: "孩儿立志出乡关，学不成名誓不还",
+		siteurl: "https://ignorant.top/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
