@@ -300,6 +300,13 @@ jobs:
                         );
                       }
 
+            - name: Auto-merge Pull Request
+              if: steps.create-pr.outputs.pr_created == 'true'
+              env:
+                  GH_TOKEN: ${{ secrets.FRIEND_LINK_TOKEN || github.token }}
+              run: |
+                  gh pr merge ${{ steps.create-pr.outputs.pr_number }} --squash --delete-branch
+
             - name: Update issue with PR link
               if: always() && steps.push-branch.outcome == 'success'
               uses: actions/github-script@v7
@@ -313,13 +320,13 @@ jobs:
                       let statusHeading;
                       if (prCreated) {
                         prLink = `[#${{ steps.create-pr.outputs.pr_number }}](${{ steps.create-pr.outputs.pr_url }})`;
-                        statusHeading = '## ✅ 友链申请已受理';
+                        statusHeading = '## ✅ 友链申请已受理并自动合并';
                       } else {
                         prLink = `[点此手动创建 PR](${compareUrl})`;
                         statusHeading = '## ⚠️ 友链数据已提交，PR 需手动创建';
                       }
 
-                      const comment = `${statusHeading}\n\n**${siteName}** 的友链申请已通过验证。Pull Request: ${prLink}。\n\n### 后续流程\n1. ⏳ 等待管理员审核 PR\n2. ✅ 审核通过后合并 PR\n3. 🎉 友链将在下次部署后生效\n\n### 请确认\n请检查您是否已在您的网站添加本站的友链。如果还没有，请尽快添加，否则申请可能会被拒绝。`;
+                      const comment = `${statusHeading}\n\n**${siteName}** 的友链申请已通过验证。Pull Request: ${prLink}。\n\n### 后续流程\n1. ✅ 友链已自动合并到主分支\n2. 🎉 友链将在下次部署后生效\n\n### 请确认\n请检查您是否已在您的网站添加本站的友链。如果还没有，请尽快添加，否则申请可能会被拒绝。`;
 
                       await github.rest.issues.createComment({
                         owner: context.repo.owner,
