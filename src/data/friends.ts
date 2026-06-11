@@ -76,6 +76,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://8872388.xyz/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 9,
+		title: "tianhw",
+		imgurl: "https://image.tianhw.top/avatar.webp",
+		desc: "前途似海，来日方长",
+		siteurl: "https://blog.tianhw.top/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
