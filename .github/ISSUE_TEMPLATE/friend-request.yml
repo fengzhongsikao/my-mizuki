@@ -59,7 +59,7 @@ body:
     id: tags
     attributes:
       label: "标签"
-      description: "用逗号分隔，例如: 个人博客, 技术, 摄影"
-      placeholder: "个人博客, 技术"
+      description: "用逗号(英文)分隔，例如: 个人博客,技术,摄影"
+      placeholder: "个人博客,技术"
     validations:
       required: true
