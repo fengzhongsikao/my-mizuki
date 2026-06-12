@@ -164,7 +164,7 @@ export const siteConfig: SiteConfig = {
 			enable: true, // 在主页显示自定义文本
 			title: "风起的博客", // 主页横幅主标题
 
-			subtitle: [],
+			subtitle: ["无善无恶心之体,有善有恶意之动"],
 			typewriter: {
 				enable: false, // 启用副标题打字机效果
 				speed: 100, // 打字速度（毫秒）
