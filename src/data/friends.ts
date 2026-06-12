@@ -70,10 +70,10 @@ export const friendsData: FriendItem[] = [
 	},
 	{
 		id: 8,
-		title: "尺素",
-		imgurl: "https://8872388.xyz/home/avatar.webp",
+		title: "雨祁小窝",
+		imgurl: "https://yqamm.cc.cd/_astro/avatar.DsloLJ2B_Z2ceESW.webp",
 		desc: "生命绚烂，别被黑暗压垮",
-		siteurl: "https://8872388.xyz/",
+		siteurl: "https://yqamm.cc.cd/",
 		tags: ["个人博客"],
 	},
 	{
