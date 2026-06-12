@@ -92,6 +92,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://ignorant.top/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 11,
+		title: "辰渊尘站",
+		imgurl: "https://blog.mcxiaochen.top/images/congyu/touxiang.webp",
+		desc: "有志不在年高，无志空活百岁。",
+		siteurl: "https://blog.mcxiaochen.top/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
