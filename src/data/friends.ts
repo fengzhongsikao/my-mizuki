@@ -100,6 +100,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://blog.mcxiaochen.top/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 12,
+		title: "晓林的博客",
+		imgurl: "https://image.peterjxl.com/blog/re0.jpg",
+		desc: "程序猿，自由职业者，博主，英语爱好者，健身达人",
+		siteurl: "https://www.peterjxl.com/",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
