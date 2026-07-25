@@ -108,6 +108,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://www.peterjxl.com/",
 		tags: ["个人博客"],
 	},
+	{
+		id: 13,
+		title: "十三",
+		imgurl: "https://blog.nw177.cn/assets/avatar.webp",
+		desc: "欲买桂花同载酒，终不似，少年游。",
+		siteurl: "https://blog.nw177.cn",
+		tags: ["个人博客"],
+	},
 ];
 
 // 获取所有友情链接数据
