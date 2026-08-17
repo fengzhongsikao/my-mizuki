@@ -1,5 +1,5 @@
 ---
-title: 我的gui框架收集
+title: gui框架收集
 published: 2026-05-22
 updated: 2026-05-22
 description: '关于各种语言的gui 框架收集'
